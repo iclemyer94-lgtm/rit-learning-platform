@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RIT Adaptive Learning Platform</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>RIT Adaptive Reading & Question Generator</h1>
+    <a class="button" href="dashboard.html">Teacher Dashboard</a>
+</header>
+
+<section class="container">
+
+    <h2>Upload Student RIT Scores</h2>
+    <input type="file" id="ritUpload" accept=".csv,.json">
+    <button class="button" onclick="uploadRIT()">Upload</button>
+
+    <h2>Upload Weekly Reading (plain .txt)</h2>
+    <input type="file" id="readingUpload" accept=".txt">
+    <button class="button" onclick="uploadReading()">Upload</button>
+
+    <p>After uploading both CSV and reading, go to the Teacher Dashboard to generate packets.</p>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
